@@ -8,5 +8,5 @@ Bu depo, bir banka yönetim sistemi projesini içermektedir. Proje, bankaların 
 
 # GIF
 
-![](imageS/easybankgif.gif)
+![](images/easybankgif)
 
