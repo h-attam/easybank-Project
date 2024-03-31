@@ -1,0 +1,54 @@
+.header {
+    position: relative;
+    nav {
+      background-color: $white;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+    &__logo {
+      img {
+        width: 140px;
+        height: 18px;
+      }
+    }
+    &__menu {
+      background-color: $white;
+      margin-left: 20%;
+      width: calc(100% - 50px);
+      a {
+        position: relative;
+        font-size: $font-sm;
+        color: $grayishBlue;
+        transition: color 300ms ease-in-out;
+        margin-right: 32px;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          background: linear-gradient(to right, $limeGreen, $brightCyan);
+          height: 5px;
+          right: 0;
+          left: 0;
+          bottom: -30px;
+          opacity: 0;
+          transition: opacity 300ms ease-in-out;
+        }
+        &:hover {
+          color: $darkBlue;
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+    }
+    .menuBtn {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .header {
+      &__menu {
+        display: none;
+      }
+    }
+  }
